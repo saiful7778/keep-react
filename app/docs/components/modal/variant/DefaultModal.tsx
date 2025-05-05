@@ -9,6 +9,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalTitle,
+  ModalClose,
 } from '../../../../src'
 
 const DefaultModal = () => {
@@ -31,7 +32,9 @@ const DefaultModal = () => {
             </div>
           </ModalHeader>
           <ModalFooter>
-            <Button variant="outline">Cancel</Button>
+            <ModalClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </ModalClose>
             <Button>Confirm</Button>
           </ModalFooter>
         </ModalContent>
